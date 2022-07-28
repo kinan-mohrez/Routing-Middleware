@@ -1,0 +1,24 @@
+{
+  "name": "routing-middleware",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kinan-mohrez/Routing-Middleware.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kinan-mohrez/Routing-Middleware/issues"
+  },
+  "homepage": "https://github.com/kinan-mohrez/Routing-Middleware#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-validator": "^6.14.2",
+    "nodemon": "^2.0.19"
+  }
+}
