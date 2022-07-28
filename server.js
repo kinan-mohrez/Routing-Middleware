@@ -10,15 +10,16 @@ const port = 3000;
 // });
 app.get('/verify/:token', secure, (req, res) => {
 	console.log('token');
+	res.send('Hallo world!');
 });
 
 function secure(req, res, next) {
-	if (req.params.token) {
-		res.send('Hallo world!');
+	if (req.params.token && req.params.token.length > 3) {
+		next();
+		return;
 	} else {
 		res.status(403).send('the token hasn’t any value or doesn’t exist');
 	}
-	next();
 }
 
 app.listen(port, () => {
